@@ -1,0 +1,498 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #565c64;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    width:full;
+    display: flex;
+    height: 35px;
+    background-color: #3e4451;
+}
+.toggle {
+    background-color: #007bff; 
+    color: white;            
+    border: none;   
+    height:30px;          
+    border-radius: 5px;      
+   
+    font-size: 10px;  
+    margin-left: 1050px;        
+    cursor: pointer;           
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+/* Changed button color on hover */
+.toggle:hover {
+    background-color: black; 
+    transform: scale(1.05);   
+}
+.imge{
+    width: 50px;
+    height:30px;
+    margin-top: 3px;
+    margin-left: 5px;
+    border-radius: 20px;
+    color: #3e4451;
+
+}
+
+/* Style for the logo (h1) */
+h1 {
+    cursor: pointer;
+    color: white;               
+    font-size: 1.5em;         
+    font-weight: bold;       
+    margin-left: 15px;                
+    text-align: center;       
+    transition: color 0.3s;   
+}
+
+.home{
+    display: flex;
+}
+.sidebar{
+    margin-top: 5px;
+    width: 15vw;
+    height: 95vh;
+    background-color: #3e4451;
+    border-radius: 10px; 
+    /* border-radius: 4%; */
+    
+}
+.chat {
+    width: 12vw;
+    height: 6vh;
+    margin: 3px;
+    margin-top: 9px;
+    margin-left: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+}
+
+/* Hover effects */
+.chat:hover {
+    background-color: #333; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.chat:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+.chat:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+}
+
+.sign{
+    display: flex;
+    background-color: black;
+    width:12vw;
+    height:6vh;
+    margin-left: 12px;
+    justify-content: center;
+    margin-top: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.sign button{
+   
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border: black;
+    cursor: pointer;
+}
+.sign p{
+    margin: 7px;
+    color:white;
+    font-weight: bold;
+    background-color: black;
+    font-size: larger;
+   
+}
+
+.center{
+    width:90vw;
+    margin:15px;
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    
+}
+h2{
+    margin-top: 15px;
+    margin-left: 400px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 0.5s forwards; 
+}
+h3{
+    margin-top: 15px;
+    margin-left: 300px;
+    font-size: x-large ;
+    font-weight: bold;
+    opacity: 0; 
+    transform: translateX(20px); 
+    animation: fadeInUp 4.5s forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+.boxes{
+    display: flex;
+    margin: 15px;
+    margin-left: 35px;
+    justify-content: center;
+   
+
+}
+/* Box Styling */
+.box {
+    background-color:burlywood;
+    width: 320px;
+    height: 180px;
+    border-radius: 15px; 
+    border: 2px solid #0077ff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    gap: 30px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #333;
+    padding: 1px;
+    /* Animation */
+    opacity: 0; 
+    transform: translateY(390px); 
+    animation: slideUp 3.5s forwards; 
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+
+.box:hover {
+    transform:  scale(1.05) translateY(0); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+}
+
+h4{
+    background-color:darkorange;
+    color: white;
+    /* border: 1px; */
+    width:315px;
+    height:29px;
+    margin-top: 0px;
+
+    padding-top: 3px;
+    padding-left: 100px;
+    border-radius: 25px;
+    font-size: larger;
+    overflow: hidden;
+}
+.chatbutton {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    width: 40vw;
+    margin-left: 300px;
+}
+
+
+.input-container {
+    display: flex; 
+    align-items: center;
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    padding: 5px; 
+    background-color: white; 
+    margin-top: 20px;
+}
+
+.input {
+    flex: 1; 
+    border: none;
+    outline: none; 
+    padding: 10px; 
+    border-radius: 25px; 
+    width: 40vw;
+   
+    height:3vh;
+}
+.svg2{
+    color: white;
+    margin-top: 5px;
+    margin-right: 1px;
+}
+p2{
+    color:white;
+    margin-top: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.upload-icon {
+    cursor: pointer; 
+    margin-left: 10px;
+    
+    
+    width: 50px; 
+    height: 25px;
+}
+
+
+
+.file-upload {
+    display: none;
+}
+
+
+
+.send-button {
+    background-color: gray; 
+    border: none; 
+    cursor: pointer;
+    color: white; 
+    font-size: 20px; 
+    padding: 5px; 
+    border-radius: 20px; 
+}
+
+.send-button:hover {
+    background-color: #0056b3; 
+}
+
+.chat-display{
+    /* position: absolute;
+    margin-bottom: 200px; */
+    width: 83vw;
+    height: 423px;
+    background-color:white;
+    
+    margin: 5px;
+    border-radius: 20px;
+}
+.main{
+    position: relative;
+}
+
+.user-message {
+    align-self: flex-end;
+    max-width: 100%;
+    text-align: right;
+    
+}
+/* p Styling */
+p {
+    width: 315px;
+    height: 42px;
+  
+    padding: 4px;
+    padding-top: 15px;
+    margin: 0 auto; 
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    transition: color 0.3s ease, border-bottom 0.3s ease; 
+}
+
+
+p:hover {
+    color:yellow; 
+    background-color:gray;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* SVG Class */
+.svg {
+    margin-right: 10px;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .toggle{
+        margin-left: 570px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        width:95vw;
+        height:10vh;
+        display: flex;
+    }
+    .sign{
+        margin:0px;
+        margin-top: 9px;
+        margin-left: 290px;
+        width:180px;
+    }
+    .chat{
+        width:100px;
+    }
+    .center{
+        width:92vw;
+        height:80vh;
+    }
+    h2{
+        margin:0;
+        font-size: larger;
+        margin-top: 10px;
+        margin-left: 300px;
+        font-weight: bold;
+    }
+    h3{
+        margin:0;
+        font-size: large;
+        margin-top: 10px;
+        margin-left: 200px;
+    }
+    .boxes{
+        flex-direction: row;
+        transform: translateY(-1px);
+        width: 200px;
+        margin-left: 290px;
+        /* height:100px; */
+    
+    }
+    .box{
+        /* margin-left: 50px; */
+        width:220px;
+        height:200px;
+    }
+    h4{
+        width:215px;
+        padding: 0;
+        padding-left: 50px;
+    }
+    p{
+        width:210px;
+    }
+    .chatbutton{
+        width:70vw;
+        margin:0;
+        margin-left: 45px;
+    }
+    .input{
+        width:50vw;
+    }
+    .chat-image{
+        margin:0px;
+        margin-left: 25px;
+        width:30px;
+        height:50px;
+        display: block;
+    }
+    
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .toggle{
+        margin-left: 270px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        width:95vw;
+        height:10vh;
+        display: flex;
+    }
+    .sign{
+        margin:0px;
+        margin-top: 9px;
+        margin-left: 60px;
+        width:180px;
+    }
+    .chat{
+        width:100px;
+    }
+    .center{
+        width:92vw;
+        height:750px;
+    }
+    h2{
+        margin:0;
+        font-size: larger;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+    h3{
+        margin:0;
+        font-size: large;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .boxes{
+        flex-direction: column;
+        transform: translateY(-1px);
+        width: 200px;
+        margin-left: 90px;
+        /* height:100px; */
+    
+    }
+    .box{
+        
+        height:200px;
+    }
+    p{
+        width:200px;
+    }
+    .chatbutton{
+        width:70vw;
+        margin:0;
+        margin-left: 45px;
+    }
+    .input{
+        width:50vw;
+    }
+    .chat-image{
+        margin:0px;
+        margin-left: 25px;
+        width:30px;
+        height:50px;
+        display: block;
+    }
+    
+}
+
+
+
+
+
